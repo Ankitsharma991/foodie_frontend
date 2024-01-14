@@ -12,16 +12,17 @@ const Navbar = () => {
   const isMobile = useMediaQuery("(max-width: 767px)");
 
   return (
-    <div className="w-full h-fit md:justify-around justify-center shadow-md fixed bg-cyan-100 z-50 flex items-center md:px-[10vw]">
+    <div className="w-full h-fit md:justify-between justify-center shadow-md fixed bg-cyan-100 z-50 flex items-center md:px-[10vw]">
       <Logo />
+
       <div
-        className={`flex flex-1 justify-${isMobile ? "center" : "end"} ${
+        className={`flex  justify-${isMobile ? "center" : "end"} ${
           isMobile ? "flex-col" : "flex-row"
         } md:gap-[10vw]`}
       >
         {!isMobile && (
           <>
-            <div className="flex justify-center items-center py-3 shadow-md px-5 bg-white">
+            <div className="flex md:justify-center w-fit justify-between md:visible  items-center py-3 shadow-md px-5 bg-white">
               <input
                 type="text"
                 placeholder="Search.."
@@ -52,7 +53,7 @@ const Navbar = () => {
           )}
           {authUser && (
             <p
-              className="shadow-md uppercase flex justify-center items-center w-fit h-fit gap-2 bg-white rounded-full font-medium px-5 py-2 hover:cursor-pointer hover:text-gray-600"
+              className="shadow-md md:flex hidden uppercase justify-center items-center w-fit h-fit gap-2 bg-white rounded-full font-medium px-5 py-2 hover:cursor-pointer hover:text-gray-600"
               onClick={() => setAuthUser(!authUser)}
             >
               Register <FaUser />

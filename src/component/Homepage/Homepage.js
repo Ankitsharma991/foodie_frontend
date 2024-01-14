@@ -7,9 +7,9 @@ const Homepage = () => {
   return (
     <div>
       <div className="">
-        <img src={item1} alt="plate-1" />
         <img src={item2} alt="plate2" />
         <img src={item3} alt="plate3" />
+        <img src={item1} alt="plate-1" className=""/>
       </div>
     </div>
   );
