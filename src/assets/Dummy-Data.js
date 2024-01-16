@@ -66,7 +66,7 @@ const CardItems = [
     id: 2,
     url: "https://i.pinimg.com/originals/45/e3/25/45e32581a962d071b05689efff4edd7b.jpg",
     title: "Nepali Non-Veg Thali",
-    desc: [
+    items: [
       "Rice, Daal",
       "Chicken Curry, Sidra ko Achar ",
       "Papad, Aloo ko aachar",
@@ -77,7 +77,7 @@ const CardItems = [
     id: 3,
     url: "https://media.istockphoto.com/id/464597636/photo/indian-thali.jpg?s=612x612&w=0&k=20&c=zNLiQGA1RanLeTNP3YSKUUGwmLyh4NHwdL83528kd74=",
     title: "North Indian Veg Thali",
-    desc: [
+    items: [
       "Rice, bread",
       "Chicken Curry, Mutton gravy",
       "Salad, Raita",

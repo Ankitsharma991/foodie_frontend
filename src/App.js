@@ -17,7 +17,7 @@ function App() {
           <Route path="/" Component={Homepage} />
         </Routes>
         <Footer />
-       
+        <ToastContainer />
       </div>
     </Router>
   );
