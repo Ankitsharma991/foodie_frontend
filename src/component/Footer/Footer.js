@@ -8,7 +8,7 @@ const Footer = () => {
   const isMobile = useMediaQuery("(max-width: 767px)");
 
   return (
-    <div className="w-full md:pl-[15vw] md:pr-[15vw] p-0 justify-center bg-blue-400 pb-3">
+    <div className="w-full md:pl-[15vw] md:pr-[15vw] p-0 justify-center bg-[#FFCDF4] pb-3">
       <div className="flex flex-col md:flex-row items-center md:justify-between">
         <div className="flex md:items-start">
           <Logo />
@@ -22,19 +22,19 @@ const Footer = () => {
           <div className="flex justify-center gap-5 items-center">
             <CiTwitter
               size={25}
-              className="text-black hover:text-white hover:cursor-pointer hover:scale-[1.5]"
+              className="text-black hover:text-red-500 hover:cursor-pointer hover:scale-[1.5]"
             />
             <CiFacebook
               size={25}
-              className="text-black hover:text-white hover:cursor-pointer hover:scale-[1.5]"
+              className="text-black hover:text-red-500 hover:cursor-pointer hover:scale-[1.5]"
             />
             <CiInstagram
               size={25}
-              className="text-black hover:text-white hover:cursor-pointer hover:scale-[1.5]"
+              className="text-black hover:text-red-500 hover:cursor-pointer hover:scale-[1.5]"
             />
             <CiLinkedin
               size={25}
-              className="text-black hover:text-white hover:cursor-pointer hover:scale-[1.5]"
+              className="text-black hover:text-red-500 hover:cursor-pointer hover:scale-[1.5]"
             />
           </div>
           {isMobile && (
@@ -46,22 +46,22 @@ const Footer = () => {
       </div>
       <div className="flex border-b-[1px] justify-center gap-5 border-t-[1px] md:shadow:sm md:border-white md:border-b-[1px] py-2 mt-3">
         <Link to="/">
-          <p className="hover:text-white hover:underline hover:scale-[1.2]">
+          <p className="hover:text-red-500 hover:underline hover:scale-[1.2]">
             Recipes
           </p>
         </Link>
         <Link to="/">
-          <p className="hover:text-white hover:underline hover:scale-[1.2]">
+          <p className="hover:text-red-500 hover:underline hover:scale-[1.2]">
             Contact
           </p>
         </Link>
         <Link to="/">
-          <p className="hover:text-white hover:underline hover:scale-[1.2]">
+          <p className="hover:text-red-500 hover:underline hover:scale-[1.2]">
             Shop
           </p>
         </Link>
         <Link to="/">
-          <p className="hover:text-white hover:underline hover:scale-[1.2]">
+          <p className="hover:text-red-500 hover:underline hover:scale-[1.2]">
             Feedback
           </p>
         </Link>
@@ -69,12 +69,12 @@ const Footer = () => {
       <div className="flex flex-wrap md:justify-center justify-around gap-2 md:gap-5  mt-3">
         <p className="mb-2 md:mb-0">@Copyright.2024</p>
         <Link to="/">
-          <p className="hover:text-white hover:underline hover:scale-[1.1]">
+          <p className="hover:text-red-500 hover:underline hover:scale-[1.1]">
             Terms and Condition
           </p>
         </Link>
         <Link to="/">
-          <p className="hover:text-white hover:underline hover:scale-[1.1]">
+          <p className="hover:text-red-500 hover:underline hover:scale-[1.1]">
             Privacy Policy
           </p>
         </Link>

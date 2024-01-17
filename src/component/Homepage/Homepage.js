@@ -5,6 +5,7 @@ import item3 from "../../assets/images/item3.png";
 import FoodShop from "../FoodItems/FoodShop";
 import FoodTrend from "../FoodItems/FoodTrend";
 import FoodCard from "../FoodItems/FoodCard";
+import Typewriter from "typewriter-effect";
 
 const Homepage = () => {
   return (
@@ -23,6 +24,21 @@ const Homepage = () => {
             <div className="p-5">
               <p className="text-[2vmax] font-black ">Taste the Goodness</p>
               <p className="text-[2vmax] font-thin mt-3">FOODIE-HOME</p>
+              <p className="md:text-[1.5vmax] text-[2vmax] font-light text-red-500 w-full ">
+                <Typewriter
+                  options={{
+                    strings: [
+                      "South Indian Food",
+                      "Nepali Non-Veg Thali",
+                      "North Indian Veg Thali",
+                      "Tea & Snacks",
+                      "and Fast Foods.",
+                    ],
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
+              </p>
             </div>
             <div className="flex w-fit justify-between align-middle items-center text-center">
               <FoodCard />

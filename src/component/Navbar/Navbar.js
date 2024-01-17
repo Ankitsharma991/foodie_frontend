@@ -12,7 +12,7 @@ const Navbar = () => {
   const isMobile = useMediaQuery("(max-width: 767px)");
 
   return (
-    <div className="w-full h-fit md:justify-between justify-center shadow-md fixed bg-cyan-100 z-50 flex items-center md:px-[10vw]">
+    <div className="w-full h-fit md:justify-between justify-center shadow-md fixed bg-red-200 z-50 flex items-center md:px-[10vw]">
       <Logo />
 
       <div
@@ -22,11 +22,11 @@ const Navbar = () => {
       >
         {!isMobile && (
           <>
-            <div className="flex md:justify-center w-fit justify-between md:visible  items-center py-3 shadow-md px-5 bg-white">
+            <div className="flex md:justify-center w-fit justify-between md:visible  items-center py-3 shadow-md px-5 bg-red-100">
               <input
                 type="text"
                 placeholder="Search.."
-                className=" bg-transparent outline-none border-r-2 border-black"
+                className=" bg-transparent outline-none border-r-2 border-black font-medium text-gray-500"
               />
               <IoSearch className="ml-3 hover:cursor-pointer" size={20} />
             </div>
@@ -47,13 +47,13 @@ const Navbar = () => {
 
         <div className="flex gap-5">
           {authUser && (
-            <p className="shadow-md uppercase flex justify-center items-center w-fit h-fit gap-2 bg-white rounded-full font-medium px-5 py-2 hover:cursor-pointer hover:text-gray-600">
+            <p className="shadow-md uppercase flex justify-center items-center w-fit h-fit gap-2 bg-red-100 rounded-full font-medium px-5 py-2 hover:cursor-pointer hover:text-white hover:bg-red-500">
               Log in <IoLogIn />
             </p>
           )}
           {authUser && (
             <p
-              className="shadow-md md:flex hidden uppercase justify-center items-center w-fit h-fit gap-2 bg-white rounded-full font-medium px-5 py-2 hover:cursor-pointer hover:text-gray-600"
+              className="shadow-md md:flex hidden uppercase justify-center items-center w-fit h-fit gap-2 bg-red-100 rounded-full font-medium px-5 py-2 hover:cursor-pointer hover:text-white hover:bg-red-500"
               onClick={() => setAuthUser(!authUser)}
             >
               Register <FaUser />
@@ -61,7 +61,7 @@ const Navbar = () => {
           )}
           {!authUser && (
             <p
-              className="shadow-md uppercase flex justify-center items-center w-fit h-fit gap-2 bg-white rounded-full font-medium px-5 py-2 hover:cursor-pointer hover:text-gray-600"
+              className="shadow-md uppercase flex justify-center items-center w-fit h-fit gap-2 bg-red-100 rounded-full font-medium px-5 py-2 hover:cursor-pointer hover:text-white hover:bg-red-500"
               onClick={() => setAuthUser(!authUser)}
             >
               User <BsThreeDotsVertical />

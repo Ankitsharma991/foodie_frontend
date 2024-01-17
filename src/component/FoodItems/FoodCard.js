@@ -36,7 +36,7 @@ const FoodCard = () => {
               <p className="text-blue-500">see more..</p>
             )}
           </div>
-          <button className="mt-2 w-full px-4 py-2 text-white bg-blue-500 rounded-full focus:outline-none hover:bg-blue-700 transition duration-300">
+          <button className="mt-2 w-full px-4 py-2 font-medium  border-2 border-red-500 text-red-500  rounded-full hover:bg-red-500 hover:text-white hover:outline-white">
             Order Now
           </button>
         </div>
