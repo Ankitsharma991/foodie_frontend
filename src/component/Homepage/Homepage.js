@@ -16,7 +16,7 @@ const Homepage = () => {
             <img
               src={item1}
               alt="plate-1"
-              className="lg:h-auto lg:w-auto h-[120px] w-fit  lg:m-auto md:mt-[40vh] lg:scale-[0.6] lg:mt-[30vh] mt-[40vh]"
+              className="lg:h-auto lg:w-auto h-[120px] md:max-w-[20vw]  lg:m-auto md:mt-[40vh] lg:scale-[0.6] lg:mt-[30vh] mt-[40vh]"
             />
           </div>
 
@@ -40,12 +40,12 @@ const Homepage = () => {
                 />
               </p>
             </div>
-            <div className="flex w-fit justify-between align-middle items-center text-center">
+            <div className="flex w-ull justify-between items-center text-center">
               <FoodCard />
             </div>
           </div>
           <div className="flex flex-col items-center justify-between h-fit md:m-0 mt-[-80vh]">
-            <div className="flex w-fit h-fit flex-col items-center justify-between lg:gap-[10vh] gap-[25vh]">
+            <div className="flex  flex-col items-center justify-between lg:gap-[10vh] gap-[25vh] md:mt-0 mt-[-40vh]">
               <img
                 src={item2}
                 alt="plate2"
