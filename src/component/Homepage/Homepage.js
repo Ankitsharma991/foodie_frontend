@@ -7,6 +7,7 @@ import FoodTrend from "../FoodItems/FoodTrend";
 import FoodCard from "../FoodItems/FoodCard";
 import Typewriter from "typewriter-effect";
 
+
 const Homepage = () => {
   return (
     <>

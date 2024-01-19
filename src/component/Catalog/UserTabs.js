@@ -6,7 +6,7 @@ import { VscSignOut } from "react-icons/vsc";
 const UserTabs = () => {
   const [authUser, setAuthUser] = useState(true);
   return (
-    <div className="text-center items-center md:mt-[10vh] mt-[11vh] flex flex-1 h-full md:ml-[10vw] md:mr-[10vw]">
+    <div className="text-center items-center md:mt-[10vh] mt-[11vh] flex flex-1 h-full">
       {authUser ? (
         <div className="flex items-center justify-between w-full shadow-white   pt-3 shadow-inner border-b-2 pb-3 bg-red-50 px-5 text-center">
           <div className="flex flex-col items-start text-center justify-center">
@@ -17,10 +17,7 @@ const UserTabs = () => {
               Welcome to back!
             </p>
           </div>
-          <p
-            className="shadow-md uppercase  md:flex md:visible hidden justify-center items-center w-fit h-fit gap-2  rounded-full font-medium px-5 py-2 hover:cursor-pointer text-white bg-red-500 hover:border-2 hover:border-red-500 hover:bg-white hover:text-red-500 "
-            onClick={() => setAuthUser(!authUser)}
-          >
+          <p className="shadow-md uppercase  md:flex md:visible hidden justify-center items-center w-fit h-fit gap-2  rounded-full font-medium px-5 py-2 hover:cursor-pointer text-white bg-red-500 hover:border-2 hover:border-red-500 hover:bg-white hover:text-red-500 ">
             Menu Guide
           </p>
           <div className="flex justify-around  md:gap-[5vw] gap-10 items-center md:scale-100 scale-75">
@@ -45,6 +42,7 @@ const UserTabs = () => {
             </div>
             <VscSignOut
               size={30}
+              onClick={() => setAuthUser(!authUser)}
               className="text-gray-900 hover:text-red-500 hover:cursor-pointer"
             />
           </div>
