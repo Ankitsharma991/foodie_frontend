@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { allOptions } from "./Options_Data";
-import Slider from "react-rangeslider";
-import "react-rangeslider/lib/index.css";
-import "./slider.css";
 
 const geoOption = [
   "Chinese",
@@ -15,10 +12,6 @@ const geoOption = [
 
 const Filter = () => {
   const [price, setPrice] = useState(0);
-
-  const handleSliderChange = (value) => {
-    setPrice(value);
-  };
 
   let max = 100;
 
@@ -102,12 +95,14 @@ const Filter = () => {
             />
           </div>
         </div>
-        <Slider
-          min={1}
+
+        <input
+          type="range"
+          min={0}
           max={max}
-          step={1}
           value={price}
-          onChange={handleSliderChange}
+          className="range w-full"
+          onChange={handlePriceChange}
         />
       </div>
     </div>
