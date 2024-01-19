@@ -6,6 +6,7 @@ import { IoSearch } from "react-icons/io5";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { FaOpencart } from "react-icons/fa";
 import { useMediaQuery } from "usehooks-ts";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [authUser, setAuthUser] = useState(false);
@@ -32,15 +33,24 @@ const Navbar = () => {
             </div>
 
             <div className="flex justify-center gap-5 ">
-              <p className="flex items-center gap-2 font-serif hover:text-gray-600 text-[20px] hover:cursor-pointer">
-                Home
-              </p>
-              <p className="flex items-center gap-2 font-serif hover:text-gray-600 text-[20px] hover:cursor-pointer">
-                Browse
-              </p>
-              <p className=" flex items-center gap-2 font-serif hover:text-gray-600 text-[20px] hover:cursor-pointer">
+              <Link
+                to="/"
+                className="flex items-center gap-2 font-serif hover:text-gray-600 text-[20px] hover:cursor-pointer"
+              >
+                <p>Home</p>
+              </Link>
+              <Link
+                to="/catalog"
+                className="flex items-center gap-2 font-serif hover:text-gray-600 text-[20px] hover:cursor-pointer"
+              >
+                <p>Browse</p>
+              </Link>
+              <Link
+                to="/catalog"
+                className="flex items-center gap-2 font-serif hover:text-gray-600 text-[20px] hover:cursor-pointer"
+              >
                 Cart <FaOpencart />
-              </p>
+              </Link>
             </div>
           </>
         )}

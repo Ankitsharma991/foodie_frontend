@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../../assets/images/foodie_logo.png";
+import { Link } from "react-router-dom";
 // import { useMediaQuery } from "usehooks-ts";
 
 const Logo = () => {
@@ -7,7 +8,9 @@ const Logo = () => {
 
   return (
     <div className="flex flex-col w-fit items-center scale-75 cursor-pointer">
-      <img src={logo} alt="logo" className="h-[80px] w-[100px] mb-2" />
+      <Link to="/">
+        <img src={logo} alt="logo" className="h-[80px] w-[100px] mb-2" />
+      </Link>
       <div className="flex">
         <p className="font-bold">
           <span className="bg-green-500 px-2 py-1 mx-1 text-white rounded-lg">
