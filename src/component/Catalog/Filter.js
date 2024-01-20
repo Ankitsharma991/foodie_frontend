@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { allOptions } from "./Options_Data";
+import "./style.css";
 
 const geoOption = [
   "Chinese",
@@ -29,7 +30,7 @@ const Filter = () => {
   }, [price, max]);
 
   return (
-    <div className="flex flex-col w-[15vw] bg-white">
+    <div className="flex flex-col w-[15vw] bg-white h-fit pb-4">
       <div className="flex h-fit border-b-[1px] border-gray-300  justify-between">
         <p className="uppercase text-red-500 ml-4 my-2 font-semibold font-mono hover:cursor-pointer">
           Filter
